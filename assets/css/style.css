@@ -13,6 +13,7 @@ body {
   flex-direction: column;
 }
 
+
 h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 200;
@@ -106,6 +107,7 @@ img.headshot {
   background-color: #f8f8f8;
   padding: 1rem 0;
   text-align: center;
+  margin-top: auto;
 }
 
 .social-icons {
@@ -119,6 +121,46 @@ img.headshot {
 }
 
 /* About Styles*/
+
+.skill-heading {
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  max-width: 1200px;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+}
+
+.skill {
+  display: felx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.skill i {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.skill p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6d6c6c;
+}
+
 
 /* Contact Styles */
 
@@ -139,5 +181,8 @@ img.headshot {
     padding-top: 1rem;
     flex-direction: column;
     gap: 2rem;
+  }
+  .elv-pitch {
+    font-size: 12px;
   }
 }
