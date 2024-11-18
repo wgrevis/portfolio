@@ -13,11 +13,16 @@ body {
   flex-direction: column;
 }
 
-
 h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 200;
   font-style: normal;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: bold;
 }
 
 p {
@@ -128,7 +133,7 @@ img.headshot {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   max-width: 1200px;
   gap: 1.5rem;
   margin: 2rem auto;
@@ -161,10 +166,27 @@ img.headshot {
   color: #6d6c6c;
 }
 
-
 /* Contact Styles */
 
 /* Experience Styles */
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  gap: 2.5rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+}
+
+.job-exp h1 {
+  text-align: center;
+}
+
+.edu-exp h1 {
+  text-align: center;
+}
 
 /* Work Styles */
 
@@ -184,5 +206,25 @@ img.headshot {
   }
   .elv-pitch {
     font-size: 12px;
+  }
+  .experience {
+    grid-template-columns: 1fr;
+  }
+  .edu,
+  .job {
+    text-align: center;
+  }
+  .edu h2,
+  .job h2 {
+    font-size: 22px;
+    border-bottom: #333 solid;
+    padding-bottom: 1rem;
+  }
+  .edu p, .job p{
+    font-size: 16px;
+  }
+  .edu ul li, .job ul li {
+    font-size: 14px;
+    text-align: left;
   }
 }
