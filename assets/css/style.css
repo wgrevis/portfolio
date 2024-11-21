@@ -150,7 +150,16 @@ img.headshot {
   font-size: 64px;
 }
 
-/* About Styles*/
+/* About / Resume Styles*/
+
+.resume-heading {
+  text-align: center;
+  font-size: 64px;
+}
+
+.resume-heading i:hover {
+  transform: scale(1.2);
+}
 
 .skill-heading {
   text-align: center;
@@ -178,11 +187,6 @@ img.headshot {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.skill i {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
 
 .skill p {
   margin: 0;
@@ -191,11 +195,8 @@ img.headshot {
   color: #6d6c6c;
 }
 
-/* Contact Styles */
 
-/* Experience Styles */
-
-.experience {
+.resume {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1200px;
@@ -205,23 +206,21 @@ img.headshot {
   padding-bottom: 1rem;
 }
 
-.job-exp h1 {
-  text-align: center;
+.resume h2 {
+  font-size: 24px;
 }
 
-.experience .job a:hover {
+
+.job a:hover {
   transform: scale(1);
 }
 
-.edu-exp h1 {
-  text-align: center;
-}
 
 /* Work Styles */
 
 .work-heading {
   text-align: center;
-  font-size: 2rem;
+  font-size: 64px;
   margin-bottom: 1.5rem;
   padding-top: 1rem;
 }
@@ -278,6 +277,8 @@ img.headshot {
   border-radius: 15px;
   color: #fff;
   background-color: #6d6c6c;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .work-buttons .btn:hover {
@@ -312,24 +313,25 @@ img.headshot {
   .elv-pitch {
     font-size: 12px;
   }
-  .experience {
+  .resume {
     grid-template-columns: 1fr;
   }
-  .edu,
+  .edu-exp,
   .job {
     text-align: center;
   }
-  .edu h2,
+  .edu-exp h2,
   .job h2 {
-    font-size: 22px;
+    font-size: 18px;
     border-bottom: #333 solid;
     padding-bottom: 1rem;
+    text-align: left;
   }
-  .edu p,
+  .edu-exp p,
   .job p {
-    font-size: 16px;
+    font-size: 14px;
+    text-align: left;
   }
-  .edu ul li,
   .job ul li {
     font-size: 14px;
     text-align: left;
